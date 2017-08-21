@@ -14,7 +14,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'tpope/vim-fugitive'
 "clang completion
-Plugin 'justmao945/vim-clang'
+"             Plugin 'justmao945/vim-clang' Disabled for compatiblity
 "syntastic :D
 Plugin 'vim-syntastic/syntastic'
 "autobrackets
@@ -38,4 +38,13 @@ filetype plugin indent on    " required
 
 set number
 syntax on
- let g:clang_library_path='/usr/lib/llvm-3.8/lib'
+
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
