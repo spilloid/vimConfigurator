@@ -1,11 +1,8 @@
 #!/bin/bash
 
-#Install Vundle, plugin manager
-if [ -f "$HOME/.vim/"]; then
-	echo "Vundle already installed!"	
-else
-	git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-fi
+#Clone Vundle, will fail if exists, that's fine. 
+git clone -q https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 #Push my custom vimrc into the used vimrc
 if [ -f "$HOME/.vimrc" ]; then
 	echo "Moving old vimrc to .bak"
