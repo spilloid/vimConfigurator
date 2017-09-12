@@ -11,7 +11,7 @@ fi
 	cp .vimrc $HOME/.vimrc
 	echo "New .vimrc added!"
 mkdir $HOME/.vim/colors
-wget -o $HOME/.vim/colors/sorcerer.vim https://raw.githubusercontent.com/adlawson/vim-sorcerer/master/colors/sorcerer.vim
+cp sorcerer.vim $HOME/.vim/colors/sorcerer.vim
 #installing the plugins	
 echo ":BundleInstall" | vim
 echo "Sucess! Praise be to the hula-hooping penguins!"
