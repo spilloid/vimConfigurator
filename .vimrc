@@ -62,6 +62,6 @@ if &term =~ "xterm"
                              let &t_Sb = "\<Esc>[4%dm"
                      endif
    	     endif
-colorscheme sorcerer
+colorscheme apprentice
 set autoindent
 set cindent

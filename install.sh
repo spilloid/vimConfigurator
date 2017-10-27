@@ -11,7 +11,7 @@ fi
 	cp .vimrc $HOME/.vimrc
 	echo "New .vimrc added!"
 mkdir $HOME/.vim/colors
-cp sorcerer.vim $HOME/.vim/colors/sorcerer.vim
+cp apprentice.vim $HOME/.vim/colors/apprentice.vim
 #installing the plugins	
 echo ":BundleInstall" | vim
 echo "Sucess! Praise be to the hula-hooping penguins!"
