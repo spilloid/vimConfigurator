@@ -65,3 +65,4 @@ if &term =~ "xterm"
 colorscheme apprentice
 set autoindent
 set cindent
+set mouse=a
